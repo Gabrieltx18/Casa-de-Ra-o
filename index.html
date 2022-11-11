@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<title>I Love Pet</title>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="src/css/bootstrap.min.css">
+	<link rel="stylesheet" href="src/css/clientes.css">
+</head>
+
+<body>
+	<div class="menu-mobile">
+		<span class="menu-mobile_line menu-mobile_line-top"></span>
+		<span class="menu-mobile_line"></span>
+		<span class="menu-mobile_line menu-mobile_line-bottom"></span>
+	</div>
+	<div class="nav" >
+		<div class="nav_content">
+			<ul class="nav_list">
+				<li class="nav_list-item" > <a href="#home"> Home</li></a>
+				<li class="nav_list-item"> <a href="#quemSomos">Quem Somos </a></li>
+				<li class="nav_list-item"><a href="#parceiros"> Parceiros</li></a>
+				
+			</ul>
+		</div>
+	</div>
+	<script>
+	console.clear();
+	const app = (() => {
+	  let body;
+	  let menu;
+	  let menuItems;
+	  const init = () => {
+		body = document.querySelector('body');
+		menu = document.querySelector('.menu-mobile');
+		menuItems = document.querySelectorAll('.nav_list-item');
+		applyListeners();
+	  };
+	  const applyListeners = () => {
+		menu.addEventListener('click', () => toggleClass(body, 'nav-active'));
+	  };
+	  const toggleClass = (element, stringClass) => {
+		if (element.classList.contains(stringClass))
+		element.classList.remove(stringClass);else
+		element.classList.add(stringClass);
+	  };
+	  init();
+	})();
+</script>
+	<div class="container float-center teste">
+		<div class="jumbotron container-center">
+			<div class="row">
+				<div class="col-12" id="home">
+					
+					<h1>I LOVE PET</h1>
+						<p><h3> Os melhores produtos para fazer o seu pet feliz.</h3></p>
+					
+				<p><h3>Conheça os nossos produtos</h3></p>
+			<br>
+		<h3>Ração para Caes</h3>
+	<br>
+<br>
+	</div>
+		</div>
+			</div>
+				<div class="row">
+					<div class="col-4">
+				<div class="thumbnail">
+			<img src="src/img/magnus.png" width="306" title="Magnus">
+		<h3>MAGNUS</h3>
+	<p>Ração Magnus Premium para Cães Adulto Sabor Carne 10,1kg</p>
+<a href="https://adimax.com.br/magnus/para-caes/" class="btn btn-success">Comprar</a>
+	</div>
+			</div>
+				<div class="col-4">
+					<div class="thumbnail">
+				<img src="src/img/specialdog.png" width="306" title="Special Dog">
+			<h3>SPECIAL DOG</h3>
+		<p>Special Dog Adultos Raças Pequenas Sabor Frango e Arroz 10,1Kg</p>
+	<a href="https://www.specialdog.com.br/produtos-caes" class="btn btn-success">Comprar</a>
+</div>
+	</div>
+		<div class="col-4">
+			<div class="thumbnail">
+				<img src="src/img/premier.png" title="premier">
+			<h3>PREMIER</h3>
+		<p>Ração Premier Adulto de Raças Grandes Sabor Carne - 10,1kg </p>
+	<a href="https://www.premierpet.com.br/caes/" class="btn btn-success">Comprar</a>
+</div>
+	</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-3"></div>
+			<div class="col-6">
+				<br>
+				<h3>Ração para gatos</h3>
+				<br>
+				<br>
+			</div>
+			<div class="row">
+				<div class="col-4">
+					<div class="thumbnail">
+						<img src="src/img/golden.png"  px="306x165" title="Golden">
+						<h3>GOLDEN</h3>
+						<p>Ração para Gatos Adultos Golden Carne 10,1Kg</p>
+						<a href="https://www.premierpet.com.br/gatos/" class="btn btn-success">Comprar</a>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="thumbnail">
+						<img src="src/img/granplus.png" width="300" title="Gran PLUS">
+						<h3>GRAN PLUS</h3>
+						<p>Ração GranPlus Carne e Arroz para Gatos Adultos 10,1Kg</p>
+						<a href="https://granplus.com.br/gatos/" class="btn btn-success">Comprar</a>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="thumbnail">
+						<img src="src/img/frikies.png" width="185" title="Frikies">
+						<h3>FRISKIES</h3>
+						<p>Ração Friskies Frango para Gatos Filhotes 10,1Kg</p>
+						<a href="https://www.promofriskies.com.br/" class="btn btn-success">Comprar</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-3"></div>
+		</div>
+	</div>
+	<div class="main" id="quemSomos">
+		<div class="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d3655.574921573083!2d-46.774006409672666!3d-23.619573210594066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x94ce5468db50cce3%3A0xdbe05481aedddaaa!2sR.%20Raphael%20de%20Marco%2C%20120%20-%20Parque%20Industrial%20das%20Oliveiras%2C%20Tabo%C3%A3o%20da%20Serra%20-%20SP%2C%2006765-350!3m2!1d-23.6197683!2d-46.775113!5e0!3m2!1spt-PT!2sbr!4v1667266807169!5m2!1spt-PT!2sbr" width="700" height="500" style="border: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+		<div>
+			<h4>QUEM SOMOS</h4> 
+			<br>
+				<h5><P>
+					30 ANOS ENTREGANDO PRODUTOS EXCLUSIVOS.
+					A I LOVE PET destaca-se pela oferta de produtos de alta qualidade e atendimento diferenciado aos seus clientes: 
+					lojistas do segmento pet, médicos veterinários e criadores de cães e gatos. Enviamos para todo o brasil mas
+					residimos em São Paulo
+				</P></h5>
+		</div>
+	</div>
+	<div class="parceiros" id="parceiros">
+		<h2 class="title_parcerios">Parceiros</h2>
+		
+		<div>
+			<a href="https://www.purina-latam.com/pt-br/br/friskies"><img src="src/img/friskies logo,png.jpg" alt=""></a>
+			<a href="https://www.specialdog.com.br/"><img src="src/img/SpecialDoglogo.png" alt=""></a>
+			<a href="https://lojapetgolden.com.br/"><img src="src/img/golden-gatos-1.png" alt=""></a>
+			<a href="https://granplus.com.br/"><img src="src/img/granpluslogo.png" alt=""></a>
+			<a href="https://adimax.com.br/magnus/"><img src="src/img/magnuslogo.png" alt=""></a>
+			<a href="https://www.premierpet.com.br/"><img src="src/img/premier-formula-logo.png" alt=""></a>
+
+		</div>
+	</div>
+			</body>
+		</html>
